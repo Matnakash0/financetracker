@@ -4,6 +4,7 @@ const opSelect = document.querySelector('#op');
 const amountInput = document.querySelector('input[type="number"]');
 const descInput = document.querySelector('input[type="text"]');
 const historyList = document.querySelector('.history_list');
+const clearListBtn = document.getElementById('clearListBtn');
 
 // Загружаем сохранённые данные при открытии страницы
 function loadEntries() {
