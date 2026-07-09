@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь операций</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="shapka">
+        <div class="shapka_container">
+            <nav class="shapka_nav">
+                <img src="images/logomytrk.svg">
+                <ul class="shapka_list">
+                    <li class="shapka_list-item">
+                        <button class="shapka_list-button" onclick="window.location.href='history.html'">История расходов/доходов</button>
+                    </li>
+                    <li class="shapka_list-item">
+                        <button class="shapka_list-button" onclick="window.location.href='calendar.html'">Календарь расходов</button>
+                    </li>
+                </ul>
+                <button class="shapka_list-button" onclick="window.location.href='index.html'">Вернуться</button>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="calendar_container">
+            <div class="calendar_header">
+                <button id="prevMonth">←</button>
+                <h2 id="monthLabel"></h2>
+                <button id="nextMonth">→</button>
+            </div>
+            <div class="calendar_grid" id="calendarGrid"></div>
+        </div>
+    </main>
+    <script src="calendar.js"></script>
+</body>
+</html>

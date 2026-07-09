@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=M+PLUS+1p&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="shapka">
+        <div class="shapka_container">
+            <nav class="shapka_nav">
+                <img src="images/logomytrk.svg">
+                <button class="burger" id="burgerBtn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="shapka_list" id="shapkaList">
+                    <li class="shapka_list-item">
+                        <button class="shapka_list-button" onclick="window.location.href='history.html'">История расходов/доходов</button>
+                    </li>
+                    <li class="shapka_list-item">
+                        <button class="shapka_list-button" onclick="window.location.href='calendar.html'">Календарь расходов</button>
+                    </li>
+                    <li class="shapka_list-item">
+                        <button id="clearListBtn">Очистить</button>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+        
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero_container">
+                <p class="main_text">Расскажи о расходах/доходах за сегодня</p>
+                <div class="main_anketa">
+                    <ul class="main_list">
+                        <li>
+                            <input type="date">
+                        </li>
+                        <li>
+                            <select name="operation" id="op" placeholder="Тип операции">
+                                <option value="" disabled selected hidden>Тип операции</option>
+                                <option value="earn">Доход</option>
+                                <option value="pay">Расход</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="main_list">
+                        <li>
+                            <input type="number" placeholder="Сумма...">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Описание...">
+                        </li>
+                    </ul>
+                    <button class="main_submit" type="button">Добавить</button>
+                </div>
+            </div>
+        </section>
+        <ul class="history_list"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
