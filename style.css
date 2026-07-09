@@ -162,6 +162,11 @@ ul {
     background-color: #f9f9f9;
     border-radius: 15px;  
 }
+
+.main_history_list{
+    display: none;
+}
+
 /* КАЛЕНДАРЬ ДРУГАЯ СТРАНИЦА */
 .calendar_container {
     max-width: 868px;
